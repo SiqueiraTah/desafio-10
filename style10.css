@@ -1,0 +1,201 @@
+body{
+    background-color:#132240;
+}
+
+.fonte{
+    font-family: 'Henny Penny', cursive;
+}
+
+.maxwidth{
+    max-width:90em;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+}
+
+.header-nav{
+    background-color: #F2C879;
+}
+
+ul{
+    margin: 0;
+}
+
+.header-nav ul{
+    list-style-type: none;
+
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+.header-nav a{
+    display: block;
+    text-decoration: none;
+    color: #132240;
+    padding: 1em;
+    font-weight: 600;
+}
+
+.header-nav a:hover{
+    background-color:color-mix(in srgb, #F2C879, #ffffff 20%) ;
+    color: #0A1326;
+}
+
+/*tablet*/
+@media screen and (min-width:48em){
+
+    .header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-nav{
+        background-color: initial;
+    }
+
+    .header-nav ul{
+        margin-right: 2em;
+        font-size: 0.9em;
+    }
+
+    .header-nav li{
+        display: inline-block;
+    }
+
+    .header-nav a{
+        color: #F2C879;
+        border-radius: 5px;
+    }
+    
+    .header-nav a:hover{
+        background-color:color-mix(in srgb,#132240, #ffffff 80%);
+    }
+
+    .trailer{
+        background-color: #495875;
+        padding: 1em 1em 0em 1em;
+        line-height: 1.3em;
+
+    }
+
+    .trailer div{
+        text-align: center;
+        margin: auto;
+        width: 90%;
+    }
+
+    .trailer h1{
+        margin-top: 0;
+        padding-top: 1em;
+        color:#0A1326 ;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        font-family: 'Henny Penny', cursive;
+        font-weight: 700;
+    }
+    
+    .trailer p{
+        font-size: 1em;
+        color:#0A1326;
+        font-weight: 550;
+    }
+        
+    .trailer-btn{
+        display: inline-block;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        padding: 0.5em 0.5em;
+        background-color:#0A1326;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #F2CDA0;
+        text-transform: uppercase;
+        font-weight: 60;
+    }
+    
+    
+    .trailer_botao:hover{
+        background-color: color-mix(in srgb,#132240, #ffffff 20%);
+    }
+
+    .trailer_video{
+        display: none;
+    }
+
+    
+}
+
+@media screen and (min-width: 48em){
+        .trailer{
+            background-image: url(./img/wallpaper_traleir.jpg);
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-color: initial;
+        }
+
+        .trailer p{
+            margin-bottom: 2em;
+        }
+}
+
+.artigos{
+    background-color:#f5e1bd;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.artigos div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+      
+.artigos h1{
+    color:#132240;
+}
+
+.artigos p{
+    color:#0A1326;
+}
+    
+.icon-image{
+        width: 5.5em;
+}
+     
+.row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+}
+      
+.col{
+        flex: 1 0 auto;
+        width: 100%;
+}
+
+.col-12{
+        width: 100%;
+}
+
+@media screen and (min-width: 48em){
+    .col-6{
+        width: calc(50% - 2rem);
+    }
+}
+
+footer{
+    text-transform: uppercase;
+    color: #F2C879;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em;
+}
